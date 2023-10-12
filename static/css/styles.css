@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*
+{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body
+{
+ font-family: 'Lato',sans-serif;
+}
+.outer-box
+{
+    width:100vw;
+    height:100vh;
+    /* border: 2px solid black; */
+    background-image: url('blr.jpg');
+    background-size:cover;
+}
+
+.inner-box
+{
+    width:450px;
+    margin:0 auto;
+    position:relative;
+    top:50%;
+    transform: translateY(-50%);
+    padding:20px 50px;
+    border-radius: 8px;
+    background:linear-gradient(to bottom right, rgb(63, 150, 182), rgba(149, 88, 26, 0.613));
+    box-shadow: 2px 2px 5px;
+}
+
+.switch-field {
+    padding-top: 14px;;
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+.switch-field label {
+	background-color: #e4e4e4;
+	color: rgba(0, 0, 0, 0.6);
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #3498db;
+	box-shadow: none;
+
+}
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+.head-x h1
+{
+    font-size: 2.5rem;
+    color:#212121;
+}
+.head-x p
+{
+    font-size:0.9rem;
+    color:brown;
+    font-weight: bold;
+}
+.details-corner
+{
+    margin:20px 0;
+}
+.details-corner p
+{
+    margin: 10px 0;
+}
+.details-corner p label
+{
+    display: block;
+    font-weight: bold;
+}
+/* #locality ,#sqft
+{
+    width:100%;
+    height:30px;
+} */
+.details-corner p input , .locality,.submit
+{
+    width: 100%;
+    padding:10px;
+    border:2px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top:10px ;
+}
+.submit
+{
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor:pointer;
+    font-weight: bold;
+    font-family: 'Lato',sans-serif;
+    transition: ease-in 1s;
+}
+.submit:hover
+{
+    background-color: #2773a9;
+
+}
+.submit:active
+{
+    transform:scaleX(0.2);
+}
+.result{
+    background: #2294ed;
+    width: 76%;
+    border: 0;
+    margin: 25px 55px;
+    color: white;
+    font-size: 15px;
+    height: 35px;
+    text-align: center;
+}
+
